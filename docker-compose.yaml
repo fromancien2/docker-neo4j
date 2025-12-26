@@ -46,7 +46,6 @@ services:
       - "traefik.http.routers.neo4j${PREFIX}metrics-secure.rule=Host(`${PREFIX}m.${TRAEFIK_HOST_VPC}`)"
     networks:
       traefik_network:
-        external: false
 
 
 networks:
